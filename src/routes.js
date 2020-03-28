@@ -20,26 +20,13 @@ import TableList from "views/TableList/TableList.js";
 // import RTLPage from "views/RTLPage/RTLPage.js";
 
 const dashboardRoutes = [
-  {
-    path: "/",
-    layout: "/home"
-  },
-  {
-    path: "/dashboard",
-    name: "Dashboard",
-    rtlName: "لوحة القيادة",
-    icon: Dashboard,
-    component: DashboardPage,
-    layout: "/admin"
-  },
-  {
-    path: "/dashboard",
-    name: "Dashboard",
-    rtlName: "لوحة القيادة",
-    icon: Dashboard,
-    component: DashboardPage,
-    layout: "/admin"
-  },
+  // {
+  //   path: "/login",
+  //   name: "Login",
+  //   icon: Dashboard,
+  //   component: DashboardPage,
+  //   layout: "/home",
+  // },
   {
     path: "/user",
     name: "Directorio",
@@ -56,6 +43,14 @@ const dashboardRoutes = [
     component: TableList,
     layout: "/admin"
   },
+  {
+    path: "/dashboard",
+    name: "Dashboard",
+    rtlName: "لوحة القيادة",
+    icon: Dashboard,
+    component: DashboardPage,
+    layout: "/admin"
+  }
   // {
   //   path: "/typography",
   //   name: "Typography",

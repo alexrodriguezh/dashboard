@@ -15,7 +15,7 @@ import routes from "routes.js";
 
 import styles from "assets/jss/material-dashboard-react/layouts/adminStyle.js";
 
-// import bgImage from "assets/img/sidebar-2.jpg";
+import bgImage from "assets/img/sidebar-2.jpg";
 import logo from "assets/img/logo2.png";
 
 let ps;
@@ -34,7 +34,7 @@ const switchRoutes = (
       }
       return null;
     })}
-    <Redirect from="/admin" to="/admin/dashboard" />
+    <Redirect from="/admin" to="/admin/user" />
   </Switch>
 );
 
@@ -46,8 +46,8 @@ export default function Admin({ ...rest }) {
   // ref to help us initialize PerfectScrollbar on windows devices
   const mainPanel = React.createRef();
   // states and functions
-  // const [image, setImage] = React.useState(bgImage);
-  // const [color, setColor] = React.useState("green");
+  const [image, setImage] = React.useState(bgImage);
+  const [color, setColor] = React.useState("green");
   // const [fixedClasses, setFixedClasses] = React.useState("dropdown show");
   const [mobileOpen, setMobileOpen] = React.useState(false);
   // const handleImageClick = image => {
@@ -98,10 +98,10 @@ export default function Admin({ ...rest }) {
         routes={routes}
         // logoText={"DECHINI"}
         logo={logo}
-        // image={image}
+        image={image}
         handleDrawerToggle={handleDrawerToggle}
         open={mobileOpen}
-        // color={color}
+        color={color}
         {...rest}
       />
       <div className={classes.mainPanel} ref={mainPanel}>

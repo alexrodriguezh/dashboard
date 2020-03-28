@@ -18,23 +18,23 @@ export default function Footer(props) {
         <div className={classes.left}>
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
-              <a href="#home" className={classes.block}>
-                Home
+              <a href="#inicio" className={classes.block}>
+                Inicio
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <a href="#company" className={classes.block}>
-                Company
+              <a href="#dechini" className={classes.block}>
+                Dechini
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <a href="#portfolio" className={classes.block}>
-                Portfolio
+              <a href="#portafolio" className={classes.block}>
+                Portafolio
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <a href="#blog" className={classes.block}>
-                Blog
+              <a href="#noticias" className={classes.block}>
+                Noticias
               </a>
             </ListItem>
           </List>
@@ -43,13 +43,13 @@ export default function Footer(props) {
           <span>
             &copy; {1900 + new Date().getYear()}{" "}
             <a
-              href="https://www.creative-tim.com?ref=mdr-footer"
+              href="http://www.dechini.com.pe"
               target="_blank"
               className={classes.a}
             >
-              Creative Tim
+              Dechini
             </a>
-            , made with love for a better web
+            , just do it
           </span>
         </p>
       </div>
