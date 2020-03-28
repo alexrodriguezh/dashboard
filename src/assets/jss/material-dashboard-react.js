@@ -259,7 +259,13 @@ const inputPassword = {
 }
 
 const inputEmail = {
-  width: "100%"
+  width: "100%",
+  marginTop: "10px"
+}
+
+const inputFullname = {
+  width: "100%",
+  marginTop: "10px"
 }
 
 const grid = {
@@ -309,5 +315,6 @@ export {
   registrate,
   inputPassword,
   inputEmail,
+  inputFullname,
   grid
 };

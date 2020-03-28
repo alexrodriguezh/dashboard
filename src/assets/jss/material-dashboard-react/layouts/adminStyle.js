@@ -4,7 +4,8 @@ import {
   container,
   registrate,
   inputPassword,
-  inputEmail
+  inputEmail,
+  inputFullname
 } from "assets/jss/material-dashboard-react.js";
 
 const appStyle = theme => ({
@@ -37,6 +38,7 @@ const appStyle = theme => ({
   registrate,
   inputPassword,
   inputEmail,
+  inputFullname,
 });
 
 export default appStyle;
